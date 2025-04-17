@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card } from "@/components/ui/card";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
-import { Download, ChevronDown, Send, X, ExternalLink, Code, Smartphone, Palette } from "lucide-react";
+import { Download, ChevronDown, Send, X, ExternalLink, Code, Smartphone, Palette, Target, PenTool, LaptopMinimal } from "lucide-react";
 import { cn } from '@/lib/utils';
 import { portfolioItems, PortfolioItem, portfolioCategories } from '@/lib/portfolio-data';
 import { translations } from '@/lib/translations';
@@ -120,12 +120,14 @@ export default function Home() {
 
   const getCategoryIcon = (category: string) => {
     switch(category) {
-      case "Web Development":
-        return <Code className="w-4 h-4" />;
-      case "Mobile Apps":
-        return <Smartphone className="w-4 h-4" />;
       case "UI/UX Design":
-        return <Palette className="w-4 h-4" />;
+        return <LaptopMinimal className="w-4 h-4" />;
+      case "App Development":
+        return <Code className="w-4 h-4" />;
+      case "Illustration":
+        return <PenTool className="w-4 h-4" />;
+      case "Branding":
+          return <Target className="w-4 h-4" />;  
       default:
         return null;
     }
@@ -235,7 +237,7 @@ export default function Home() {
                   {t.about.description2}
                 </p>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/*<div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <Card className="p-6 bg-background/50 backdrop-blur">
                   <h3 className="text-2xl font-bold text-acprimary-500">10+</h3>
                   <p className="text-muted-foreground">{t.about.stats.projects}</p>
@@ -248,7 +250,7 @@ export default function Home() {
                   <h3 className="text-2xl font-bold text-acprimary-500">4 yıl</h3>
                   <p className="text-muted-foreground">{t.about.stats.awards}</p>
                 </Card>
-              </div>
+              </div>*/}
             </div>
           </div>
         </div>

@@ -101,8 +101,8 @@ export const translations: { [key: string]: Translation } = {
       title: "My Portfolio",
       categories: {
         all: "All",
-        web: "Web Development",
-        mobile: "Mobile Apps",
+        web: "App Development",
+        mobile: "Illustration",
         uiux: "UI/UX Design",
       },
     },
@@ -151,7 +151,7 @@ export const translations: { [key: string]: Translation } = {
   tr: {
     nav: {
       about: "Hakkımda",
-      portfolio: "Portfolyo",
+      portfolio: "Portföy",
       social: "Sosyal",
       contact: "İletişim",
     },
@@ -172,12 +172,12 @@ export const translations: { [key: string]: Translation } = {
       },
     },
     portfolio: {
-      title: "Portfolyom",
+      title: "Portföy",
       categories: {
         all: "Tümü",
-        web: "Web Development",
-        mobile: "Mobile Apps",
-        uiux: "UI/UX Design",
+        web: "Web Geliştirme",
+        mobile: "Mobil Uygulama",
+        uiux: "UI/UX Tasarım",
       },
     },
     contact: {
